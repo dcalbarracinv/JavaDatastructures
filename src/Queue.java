@@ -6,6 +6,10 @@ public class Queue<T> implements Iterable<T>{
 
     public Queue(){}
 
+    public Queue(T element){
+        list.addLast(element);
+    }
+
     public int size(){
         return list.size();
     }
